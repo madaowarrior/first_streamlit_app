@@ -18,4 +18,4 @@ assets_selected = streamlit.multiselect("Pick some fruits:", list(my_world_build
 assets_to_show = my_world_building_assets.loc[assets_selected]
 
 # Display the table on the page.
-streamlit.dataframe(my_world_building_assets)
+streamlit.dataframe(assets_to_show)
