@@ -7,7 +7,7 @@ streamlit.text('🥭External🥭')
 streamlit.text('🥝Internal🥝')
 streamlit.text('🍇Wireless/5g🍇')
 
-streamlit.header('World Building')
+streamlit.header('World Building Assets')
 
 import pandas
 my_world_building_assets = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
