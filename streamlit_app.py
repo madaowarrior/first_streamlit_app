@@ -26,7 +26,7 @@ streamlit.header('Fruit Asset details!')
 asset_choice = streamlit.text_input('What VR fruit asset would you like information about?','Kiwi')
                                     streamlit.write('The user entered', asset_choice)
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + asset_choice)
 
 
 # take jason version of the response and normalize it
