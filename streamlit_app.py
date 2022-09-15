@@ -19,3 +19,9 @@ assets_to_show = my_world_building_assets.loc[assets_selected]
 
 # Display the table on the page.
 streamlit.dataframe(assets_to_show)
+
+
+#New section to display fruityvice api response
+import requests
+fruitvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(frutivice_response)
