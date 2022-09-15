@@ -23,7 +23,8 @@ streamlit.dataframe(assets_to_show)
 
 #New section to display fruityvice api response
 streamlit.header('Fruit Asset details!')
-
+asset_choice = streamlit.text_input('What VR fruit asset would you like information about?,'Kiwi')
+                                    streamlit.write('The user entered', asset_choice)
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "watermelon")
 
